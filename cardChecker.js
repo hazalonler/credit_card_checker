@@ -43,7 +43,7 @@ const batch = [
 const strToNum = (strNum) => {
   let newArr = []
   for (let idx = 0; idx < strNum.length; idx++) {
-    newArr.push(strNum[idx]);
+    newArr.push(parseInt(strNum[idx]));
   }
   return newArr;
 }
@@ -119,4 +119,5 @@ invalidCards.push(invalid1, invalid2, invalid3);
 console.log(findInvalidCards(invalidCards));
 console.log(idInvalidCardCompanies(invalidCards));
 console.log(validateCred([2, 4, 4, 6, 1]));
+console.log(strToNum('5520026274542674'));
 console.log(validateCred(strToNum('5520026274542674')))
